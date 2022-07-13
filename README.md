@@ -8,7 +8,7 @@ The script takes the following parameters:
 
 Parameter | Description
 ----------|-------------
--t/--type <CATEGORY> | with <CATEGORY> being one of the categories listed in the MongoDB documentation [here](https://www.mongodb.com/docs/manual/reference/log-messages/#components)
--f/--file <FILENAME> | path/name of the log file to process. This parameter can be provided multiple times
+-t/--type <CATEGORY> | with <CATEGORY> being one of the categories listed in the MongoDB documentation [here](https://www.mongodb.com/docs/manual/reference/log-messages/#components). Defaults to 'TXN' if not specified
+-f/--file <FILENAME> | path/name of the log file to process. This parameter can be provided multiple times. User must provide at least one file to process
 
 
