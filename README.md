@@ -6,6 +6,9 @@ The script only works with the structured log format that was introduced in Mong
 
 The script takes the following parameters:
 
--t/--type <CATEGORY> with <CATEGORY> being one of the categories listed in the MongoDB documentation [here](https://www.mongodb.com/docs/manual/reference/log-messages/#components)
--f/--file <FILENAME> path/name of the log file to process. This parameter can be provided multiple times
+Parameter | Description
+-----------------------
+-t/--type <CATEGORY> | with <CATEGORY> being one of the categories listed in the MongoDB documentation [here](https://www.mongodb.com/docs/manual/reference/log-messages/#components)
+-f/--file <FILENAME> | path/name of the log file to process. This parameter can be provided multiple times
+
 
