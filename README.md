@@ -11,4 +11,14 @@ Parameter | Description
 -t/--type <CATEGORY> | with <CATEGORY> being one of the categories listed in the MongoDB documentation [here](https://www.mongodb.com/docs/manual/reference/log-messages/#components). Defaults to 'TXN' if not specified
 -f/--file <FILENAME> | path/name of the log file to process. This parameter can be provided multiple times. User must provide at least one file to process
 
+# mdb-analyze-txn-conn
 
+Identifies all connection ids that are being used by by transactions and outputs the associated client metadata log entries. This can be used to identify which clients and client applications are executing transactions.
+
+Parameter | Description
+----------|-------------
+-f/--file <FILENAME> | path/name of the log file to process. This parameter can be provided multiple times. User must provide at least one file to process
+
+# Prerequisites
+
+All scripts are written in Ruby and have so far only been tested with Ruby 3.12 and with MongoDB 5.0 log files. They only use standard packages, so it should not be necessary to install any additional packages in order to run these scripts.
